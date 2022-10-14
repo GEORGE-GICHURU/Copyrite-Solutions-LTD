@@ -1,0 +1,167 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block page_header %}
+{% endblock %}
+
+{% block content %}
+
+<div class="container-fluid">
+    <div class="row bg-white text-center p-4">
+        <div class="col-2">
+            <img src="{{ MEDIA_URL }}garofalo.png" class="img-fluid" alt="garofalo" width="100" height="auto" />
+        </div>
+
+        <div class="col-2">
+            <img src="{{ MEDIA_URL }}bertollilogo.png" class="img-fluid" alt="bertollilogo" width="100" height="auto" />
+        </div>
+
+        <div class="col-2">
+            <img src="{{ MEDIA_URL }}star.png" class="img-fluid" alt="garofalo" width="100" height="auto" />
+        </div>
+
+        <div class="col-2">
+            <img src="{{ MEDIA_URL }}garofalo.png" class="img-fluid" alt="garofalo" width="100" height="auto" />
+        </div>
+
+        <div class="col-2">
+            <img src="{{ MEDIA_URL }}yoga.jpg" class="img-fluid" alt="garofalo" width="100" height="auto" />
+        </div>
+    </div>
+</div>
+
+<!-- container body -->
+
+<div class="container header-container mt-5">
+    <div class="row">
+
+        <div class="col-12 col-xl-6">
+
+            <div class="row mt-3">
+                <div class="col-12 text-center">
+                    <img src="{{ MEDIA_URL }}prodotti.png" class="img-fluid" alt="mozzarella" width="700" height="auto" />
+
+                </div>
+
+                <div class="col-12 mt-4">
+                    <h4>Copyrite Solutions</h4>
+                    <h5><i>Passionate about quality machines</i></h5>
+                    <p> Our specialites and all our products are the result of a long tradition. We import the best products so that you can have the most genuine and high quality products.
+                        Take a look at our <a href="{% url 'products' %}" class="text-link"><i>Shop</i></a>
+                        to find amazing products, and savor the true tradition brought directly to your home.
+
+                    </p>
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col-12 mb-5 text-center">
+                    <a class="main-buttons" href="{% url 'products' %}">All Products</a>
+                </div>
+            </div>
+
+            <!-- Minolta set -->
+
+            <div class="row">
+                <div class="col-12 text-center">
+                    <img src="{{ MEDIA_URL }}pastaset.jpg" class="img-fluid" alt="pasta set" width="auto" height="288" />
+                </div>
+
+                <div class="col-12">
+                    <h4>Minolta Set</h4>
+                    <h5><i>header for minolta set</i></h5>
+                    <p>This minolta set comprise a wide variety of minolta types and various others that are often
+                        used in big offices. First-class Minolta machine. The wide range of sets covers the requirements of the 
+                        most demanding customers who are looking for top quality products.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col-12 mb-5 text-center">
+                    <a class="main-buttons" href="{% url 'products'%}?category=minolta">
+                        Minolta!
+                    </a>
+                </div>
+            </div>
+
+            <!-- samsung set -->
+
+            <div class="row">
+                <div class="col-12 text-center my-4">
+                    <img src="{{ MEDIA_URL }}oliveoil.png" class="img-fluid" alt="olive oil" width="400" height="auto" />
+                </div>
+
+                <div class="col-12">
+                    <h4>Grab real Samsung</h4>
+                    <h5><i>header for samsung</i></h5>
+                    <p>What can i say one amazing product to satisfy customers.There are all in one printers capable of merging printers,
+                        faxing, scanning, photocopying and sending emails.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col-12 mb-5 text-center">
+                    <a class="main-buttons" href="{% url 'products' %}?category=samsung">
+                        Choose one!
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- right services -->
+
+        <div class="col-12 col-xl-6">
+
+            <div class="row mt-4">
+                <div class="col-12 text-center">
+                    <img src="{{ MEDIA_URL }}wines.png" class="img-fluid" alt="wines" width="auto" height="288" />
+                </div>
+
+                <div class="col-12">
+                    <h4>Our Hp</h4>
+                    <h5><i>Hp invent just with a click</i></h5>
+                    <p>Our Hp products are carefully selected, to ensure that each bottle, whether which type, is among the
+                        best. You wiil have the opportunity to choose any.
+                        You can choose from the best. Visit our 
+                        <a href="{% url 'products' %}?category=Hp" class="text-link"><i>Hp</i></a>
+                        in the shop!
+                    </p>
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col-12 mb-5 text-center">
+                    <a class="main-buttons" href="{% url 'products' %}?category=Hp">HP</a>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-12 text-center my-4">
+                    <img src="{{ MEDIA_URL }}bag.png" class="img-fluid" alt="collect in shop" width="300" height="auto" />
+
+                </div>
+
+                <div class="col-12">
+                    <h4>Pickup in Store</h4>
+                    <h5><i>You order, we fill your bags, collect at any time</i></h5>
+                    <p>The Order & Collect service is available! You will see the option available at checkout and it's
+                        free when you spend KES2500 or more. You can collect your order at any time after 12pm on the 
+                        delivery date. It's a good idea to wait until we've sent you an email or text messages to let you know that 
+                        your order is ready to collect. Checkout and select Collect in the shop!
+                    </p>
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col-12 mb-5 text-center">
+                    <a class="main-buttons" href="{% url 'products' %}">Shop Now!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,56 @@
+<div class="collapse navbar-collapse" id="main-nav">
+    <ul class="navbar-nav w-auto mx-auto">
+        <li class="nav-item mr-2">
+            <a class="nav-link mr-4" href="{% url 'home' %}">Home</a>
+        </li>
+
+        <li class="nav-item dropdown">
+            <a class="nav-link mr-4" href="#" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                Printers
+            </a>
+
+            <div class="dropdown-menu border-0" aria-labelledby="pantry">
+                <a href="{% url 'products' %}" class="dropdown-item">Laser Printers</a>
+                <a href="{% url 'products' %}" class="dropdown-item">LED Printers</a>
+                <a href="{% url 'products' %}" class="dropdown-item">3D Printers</a>
+            </div>
+        </li>
+
+        <li class="nav-item dropdown">
+            <a class="nav-link mr-4" href="#" id="deli" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Toners
+            </a>
+
+            <div class="dropdown-menu border-0" aria-labelledby="deli">
+                <a href="{% url 'products' %}" class="dropdown-item">OEM Toner</a>
+                <a href="{% url 'products' %}" class="dropdown-item">Drill & Fill Toner</a>
+            </div>
+        </li>
+
+        <li class="nav-item dropdown">
+            <a class="nav-link mr-4" href="#" id="snacks" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Note Counting Machine
+            </a>
+
+            <div class="dropdown-menu border-0" aria-labelledby="snacks">
+                <a href="{% url 'products' %}" class="dropdown-item">Coin sorter</a>
+                <a href="{% url 'products' %}" class="dropdown-item">Banknote counter</a>
+            </div>
+        </li>
+
+        <li class="nav-item dropdown">
+            <a class="nav-link mr-4" href="#" id="wines" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Safe Boxes
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="wines">
+                <a href="{% url 'products' %}" class="dropdown-item">Green safe box</a>
+                <a href="{% url 'products' %}" class="dropdown-item">Grey safe box</a>
+            </div>
+        </li>
+
+        <li class="nav-item d-lg-none">
+            <a class="nav-link mr-4" href="{% url 'contactus' %}">Contact Us</a>
+        </li>
+    </ul>
+</div>
